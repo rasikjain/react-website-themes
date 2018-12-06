@@ -28,7 +28,7 @@ const Meta = props => {
           {categories.map(category => {
             const link = (
               <Link key={category} to={`/categories/${category}`}>
-                {category}
+                <span>{category}</span>
               </Link>
             );
             const txt = <span key={category}>{category}</span>;
